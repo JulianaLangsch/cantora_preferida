@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 170px;
+  background-image: url("rita1.jpg");
+  background-size: 100vw;
+  height: 75vh;
+  background-repeat: no-repeat;
+}
+
+.grid {
+  height: 68vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+body {
+  background-color: #9d0208;
+}
+main {
+  background-color: #9d0208;
+  padding: 20px;
+  color: white;
+  height: 100vh;
+}
+
+.destaque, 
+.biografia,
+.contato,
+.homenagens {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  background-color: #9d0208;
+
+}
+
+.menu {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #9d0208;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding-bottom: 20px;
+}
+.destaque:hover {
+  background-color: #6a040f;
+}
+
+.biografia:hover {
+  background-color: #6a040f;
+}
+
+.contato:hover {
+  background-color: #6a040f;
+}
+
+.localizacao:hover {
+  background-color: #6a040f;
+}
+
+.homenagens:hover {
+  background-color: #6a040f;
+}
+
+.introducao {
+  display: flex;
+  justify-content: center;
+  background-image: url(rits.jpg);
+  background-size: 200px;
+  height: 160px;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+  color: white;
+}
+
+audio {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  padding: 10px;
+}
+
+.midia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nome__musica {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.jeitinho {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.videoclipe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+video {
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.nome__completo {
+  display: flex;
+  font-size: 13vw;
+  padding: 20px;
+  color: #9d0208;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.historia {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.musica__link {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9d0208;
+  color: white;
+}
+
+@media (min-width: 300px) and (max-width: 580px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+
+  video {
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+  }
+
+  .menu {
+padding: 8px;
+  }
+
+  header {
+    background-size: 100vw;
+    height: 30vw;
+ }
+
+ .jeitinho {
+  font-size: 1.5em;
+ }
+
+ footer {
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+}
+}
+
+@media screen and (min-width: 581px) and (max-width: 900px){
+  header {
+    height: 50vh;
+  }
+   .jeitinho{
+    font-size: 1.5rem;
+   }
+
+   video {
+    height: 40vw;
+   }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1017px){
+header {
+  height: 75vh;
+}
+
+.menu {
+  font-size: 1.5rem;
+}
+
+}
+
+@media screen and (min-width: 1018px) and (max-width: 1458px){
+  header {
+    height: 78vh;
+  }
+  .menu {
+    font-size: 2rem;
+  }
+
+  .introducao {
+    font-size: 4rem;
+    background-size: 400px;
+    margin-bottom: 5vw;
+
+  }
+
+  .nome__musica {
+    font-size: 2.5rem;
+  }
+
+  audio {
+    width: 350px;
+  }
+  
+  .jeitinho {
+    font-size: 3rem;
+  }
+
+  video {
+    height: 40vh;
+  }
+
+  footer {
+    font-size: 2rem;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1459px) and (max-width: 1728px){
+  header {
+    height: 75vh;
+  }
+
+  .menu {
+    font-size: 3rem;
+  }
+
+  .introducao {
+    font-size: 5rem;
+    background-size: 500px;
+    margin-bottom: 5vw;
+
+  }
+
+  .nome__musica {
+    font-size: 3.5rem;
+  }
+
+  audio {
+    width: 450px;
+  }
+  
+  .jeitinho {
+    font-size: 3rem;
+  }
+
+  video {
+    height: 40vh;
+  }
+
+  footer {
+    font-size: 2rem;
+    padding: 70px;
+  }
+
+} 
